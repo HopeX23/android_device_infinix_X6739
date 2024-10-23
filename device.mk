@@ -4,6 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+DEVICE_PATH := device/Infinix/X6739
+KERNEL_PATH := $(DEVICE_PATH)-kernel
+
+# Kernel
+PRODUCT_COPY_FILES += \
+    $(KERNEL_PATH)/kernel:kernel
+
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
 
