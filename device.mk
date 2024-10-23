@@ -49,6 +49,10 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Fastbootd
+PRODUCT_PACKAGES += \
+    fastbootd
+
 # Kernel
 PRODUCT_COPY_FILES += \
     $(KERNEL_PATH)/kernel:kernel
