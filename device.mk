@@ -96,7 +96,8 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/mediatek
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/infinix/X6739/X6739-vendor.mk)
