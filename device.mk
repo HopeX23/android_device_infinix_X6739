@@ -60,6 +60,9 @@ PRODUCT_COPY_FILES += \
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Dalvik configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
