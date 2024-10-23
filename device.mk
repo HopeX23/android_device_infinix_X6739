@@ -49,6 +49,12 @@ PRODUCT_PACKAGES += \
     checkpoint_gc \
     otapreopt_script
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.1-impl \
+    android.hardware.health@2.1-impl.recovery \
+    android.hardware.health@2.1-service
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
