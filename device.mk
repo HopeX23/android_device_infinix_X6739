@@ -63,6 +63,28 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(KERNEL_PATH)/kernel:kernel
 
+# Rootdir
+PRODUCT_PACKAGES += \
+    fstab.mt6893 \
+    fstab.mt6893.vendor_ramdisk \
+    init.cgroup.rc \
+    init.connectivity.rc \
+    init.insmod.mt6893.cfg \
+    init.insmod.sh \
+    init.modem.rc \
+    init.mt6893.rc \
+    init.mt6893.usb.rc \
+    init.mtkgki.rc \
+    init.project.rc \
+    init.recovery.mt6893.rc \
+    init.sensor_2_0.rc \
+    init.target.rc \
+    ueventd.mtk.rc
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6893:$(TARGET_COPY_OUT_RECOVERY)/root/first_stage_ramdisk/fstab.mt6893 \
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6893:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.mt6893
+
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
 
