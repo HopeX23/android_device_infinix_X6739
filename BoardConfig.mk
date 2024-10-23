@@ -146,6 +146,9 @@ BOARD_HAS_MTK_HARDWARE := true
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6893
 
+# HIDL
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
