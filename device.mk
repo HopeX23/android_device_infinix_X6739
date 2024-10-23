@@ -10,6 +10,9 @@ KERNEL_PATH := $(DEVICE_PATH)-kernel
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# Installs gsi keys into ramdisk, to boot a developer GSI with verified boot.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # A/B
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
