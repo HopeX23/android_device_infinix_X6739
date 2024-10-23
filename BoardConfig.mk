@@ -44,5 +44,14 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 
+# Bootloader
+BOARD_VENDOR := infinix
+TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6739
+TARGET_NO_BOOTLOADER := true
+
+# Platform
+TARGET_BOARD_PLATFORM := mt6893
+BOARD_HAS_MTK_HARDWARE := true
+
 # Inherit the proprietary files
 include vendor/infinix/X6739/BoardConfigVendor.mk
